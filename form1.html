@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">FORMS IN HTML</h1>
+    <hr>
+
+    <form action="submit.html"></form>
+
+        <label>Username :</label>  <input type="text" placeholder="Enter your name" id="username" required/> <br><br>
+        <label>E-mail :</label>  <input type="email" placeholder="Enter your email" id="email" required /> <br> <br>
+        <label>Password :</label> 
+        <input type="password" maxlength="16" minlength="8" placeholder="Enter your password" id="pssword" required/> <br><br>
+        
+        <label>Phone :</label> 
+        <input type="text" value="+91" style="width : 30px;" readonly> 
+        <input type="tel" maxlength="10" minlength="10" placeholder="Enter your phone no"/> <br><br>
+
+        <label>Age :</label>  <input type="number" step="1" min="18" max="85"/> <br><br>
+        <label>Date of Birth</label>  <input type="date"/> <br><br>
+
+    <fieldset>
+        <legend>Select your Gender</legend>
+
+        <input type="radio" name="gender" id="Male" value="Male"/>
+        <label for="Male">Male</label> <br>
+
+        <input type="radio" name="gender" id="Female" value="Female"/>
+        <label for="Female">Female</label> <br>
+
+        <input type="radio" name="gender" id="Others" value="Others"/>
+        <label for="Others">Others</label> <br>
+    </fieldset> <br>
+
+    <fieldset>
+        <legend>Select your Skills</legend>
+
+        <input type="checkbox" name="skills" id="Java" value="Java"/>
+        <label for="Java">Java</label> <br>
+
+        <input type="checkbox" name="skills" id="JS" value="JS"/>
+        <label for="JS">JS</label> <br>
+
+        <input type="checkbox" name="skills" id="HTML" value="HTML"/>
+        <label for="HTML">HTML</label> <br>
+
+        <input type="checkbox" name="skills" id="SQL" value="SQL"/>
+        <label for="SQL">SQL</label> <br>
+    </fieldset> <br>
+
+    <fieldset>
+        <legend>Select your BatchCode</legend>
+
+        <select><option disabled selected>--Select your BatchCode--</option>
+        <option value="BECM71">BECM71</option>
+        <option value="BECM71">BECM72</option>
+        <option value="BECM71">BECM73</option>
+        <option value="BECM71">BECM74</option>
+        <option value="BECM71">BECM75</option>
+        <option value="BECM71">BECM88</option></select>
+    </fieldset> <br>
+
+    <fieldset>
+        <legend>Upload your Resume</legend>
+
+        <input type="file">
+    </fieldset> <br>
+
+    <input type="color">
+    <input type="range">
+    <input type="search">
+    <input type="url"> <br> <br>
+    <form action=""></form>
+
+    <input type="submit" value="SignIn"/>
+    <input type="reset" value="Clear"/>
+</body>
+</html>
